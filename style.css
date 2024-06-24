@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 40px;
+}
+.profile .logo_name{
+    line-height: 20px;
+    text-align: center;
+}
+
+.profile .logo img{
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+}
+.profile_info{
+    line-height: 20px;
+    display: flex;
+}
+
+.profile_info div{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.icons{
+    margin: 20px;
+}
+
+.icons a{
+    border-radius: 50%;
+}
+
+.icons img{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.gallery{
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+.gallery .cards{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 30px 20px;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery .cards div{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(98, 98, 98, 0.2), rgba(0, 0, 0, 0.9));
+    transform: translateY(300px);
+    transform-origin: bottom;
+    transition-duration: 0.6s;
+}
+
+.gallery .cards:hover>div{
+    transform: translateY(0px);
+}
+
+.cards button{
+    text-decoration: none;
+    background-color: tomato;
+    padding: 5px 7px;
+    text-align: center;
+    vertical-align: baseline;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cards button img{
+    height: 20px;
+    width: 20px;
+}
+
+.cards div>*{
+    margin-left: 20px;
+    color: white;
+    position: relative;
+    transform: translateY(150px);
+}
+
+.cards div button{
+    margin: 20px;
+}
+
+.profile_btn{
+    margin: 20px;
+}
+
+.profile_btn button{
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;  
+    display: inline;  
+    box-shadow: 1px 1px 20px gray;
+    cursor: pointer;
+}
+
+.profile_btn button:not(:first-child):hover{
+    background-color: rgb(223, 222, 222);
+}
+
+.profile_btn button:first-child{
+    background-color: tomato;
+}
+
+
+
+.profile_btn button img{
+    height: 20px;
+    width: 20px;
+}
+
+
+footer, .profile .logo_name p, .profile_info p{
+    text-align: center;
+    color: gray;
+}
+
+footer{
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery .cards{
+        margin: 30px 70px;
+    }
+}
